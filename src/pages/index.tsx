@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 function Home() {
   return (
-    <StyledHomePage>
+    <StyledHomePage data-testid="app">
       <h1 className="text-4xl text-purple-600 text-center font-semibold mt-20 mb-4">
         Stimuli Test
       </h1>
