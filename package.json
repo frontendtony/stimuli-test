@@ -1,0 +1,32 @@
+{
+  "name": "stimuli-frontend-test",
+  "version": "1.0.0",
+  "description": "Stimuli frontend test",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next -p 3005",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [
+    "Tailwind",
+    "Typescript",
+    "Nextjs",
+    "React"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "next": "^9.5.5",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "styled-components": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.13.28",
+    "@types/react": "^16.9.53",
+    "@types/styled-components": "^5.1.4",
+    "babel-plugin-styled-components": "^1.11.1",
+    "tailwindcss": "^1.9.6",
+    "typescript": "^3.9.7"
+  }
+}
