@@ -197,9 +197,6 @@ var StyledLayoutPage = styled.div`
   .sidebar {
     transition: max-width 0.25s, transform 0.25s, -webkit-transform 0.25s;
   }
-  .page-content {
-    transition: all 0.25s;
-  }
 `;
 
 export const useLayoutContext = () => {
