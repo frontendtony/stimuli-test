@@ -1,7 +1,10 @@
-import Layout from '../components/layout';
+import Hompage from './index';
 
-function Home() {
-  return <Layout data-testid="app">Test</Layout>;
+/**
+ * This page renders for every route. I used it to test the sidebar navigation buttons
+ */
+function AllRoutes() {
+  return <Hompage />;
 }
 
-export default Home;
+export default AllRoutes;

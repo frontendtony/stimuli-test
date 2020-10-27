@@ -33,7 +33,7 @@ export default function Layout(props: { children: ReactNode }) {
 
   return (
     <LayoutContext.Provider value={{ isSidebarExpanded, currentRoute }}>
-      <StyledLayoutPage className="min-h-screen" data-testid="app">
+      <StyledLayoutPage className="min-h-screen flex flex-col flex-grow" data-testid="app">
         <div
           className={`sidebar w-sidebar md:${
             isSidebarExpanded ? 'max-w-sidebar' : 'max-w-sidebar-collapsed'
@@ -166,7 +166,7 @@ export default function Layout(props: { children: ReactNode }) {
                     <span
                       className={`${
                         router.asPath === '/profile' ? 'text-current' : 'text-light-text'
-                      }  group-hover:text-current font-semibold text-xs`}
+                      }  group-hover:text-current font-semibold text-xs truncate`}
                     >
                       Free Account
                     </span>
@@ -182,11 +182,11 @@ export default function Layout(props: { children: ReactNode }) {
           </div>
         </div>
         <div
-          className={`page-content md:${
+          className={`flex flex-col flex-grow page-content md:${
             isSidebarExpanded ? 'pl-sidebar' : 'pl-sidebar-collapsed'
-          } lg:pl-sidebar pt-12 px-16`}
+          } lg:pl-sidebar mx-8`}
         >
-          <div className="max-w-screen-xl mx-auto">{children}</div>
+          <div className="flex flex-col flex-grow w-full max-w-screen-xl mx-auto">{children}</div>
         </div>
       </StyledLayoutPage>
     </LayoutContext.Provider>

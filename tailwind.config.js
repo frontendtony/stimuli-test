@@ -5,9 +5,12 @@ module.exports = {
       colors: {
         'gray-border': '#E4E4E4',
         'light-text': '#808191',
+        'link-text': '#5F75EE',
         'default-text': '#11142D',
         primary: '#6C5DD3',
         'primary-accent': '#3F8CFF',
+        success: '#7FBA7A',
+        notification: '#FF754C',
       },
       height: {
         14: '3.5rem',
@@ -27,6 +30,10 @@ module.exports = {
       padding: {
         sidebar: '256px',
         'sidebar-collapsed': '96px',
+        9: '2.25rem',
+      },
+      spacing: {
+        9: '2.25rem',
       },
       width: {
         sidebar: '256px',
