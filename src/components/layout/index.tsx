@@ -33,7 +33,7 @@ export default function Layout(props: { children: ReactNode }) {
 
   return (
     <LayoutContext.Provider value={{ isSidebarExpanded, currentRoute }}>
-      <StyledLayoutPage className="min-h-screen">
+      <StyledLayoutPage className="min-h-screen" data-testid="app">
         <div
           className={`sidebar w-sidebar md:${
             isSidebarExpanded ? 'max-w-sidebar' : 'max-w-sidebar-collapsed'
