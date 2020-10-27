@@ -1,20 +1,7 @@
-import styled from 'styled-components';
+import Layout from '../components/layout';
 
 function Home() {
-  return (
-    <StyledHomePage data-testid="app">
-      <h1 className="text-4xl text-purple-600 text-center font-semibold mt-20 mb-4">
-        Stimuli Test
-      </h1>
-    </StyledHomePage>
-  );
+  return <Layout data-testid="app">Test</Layout>;
 }
-
-var StyledHomePage = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem;
-`;
 
 export default Home;

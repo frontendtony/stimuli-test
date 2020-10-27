@@ -16,5 +16,27 @@
 }
 
 html {
-  font-family: Museo-Sans, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  font-family: Inter, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+}
+
+svg {
+  flex-shrink: 0;
+}
+
+div,
+input,
+textarea,
+select,
+button,
+button:focus,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+a:focus {
+  outline: none;
 }

@@ -1,4 +1,4 @@
-import Document, { DocumentContext } from 'next/document';
+import Document, { DocumentContext, Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
 export default class MyDocument extends Document<{ css: string }> {
@@ -25,5 +25,28 @@ export default class MyDocument extends Document<{ css: string }> {
     } finally {
       sheet.seal();
     }
+  }
+
+  render() {
+    return (
+      <html>
+        <Head>
+          {/*
+          // @ts-ignore */}
+          <style dangerouslySetInnerHTML={{ __html: this.props.css }} />
+          {/*
+          // @ts-ignore */}
+          {this.props.hydrationScript}
+          <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+            rel="stylesheet"
+          />
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </html>
+    );
   }
 }
