@@ -14,6 +14,7 @@ export default function SidebarLink(props: { href: string; children: ReactNode }
         className={`sidebar-link flex items-center text-sm font-semibold h-14 rounded-xl overflow-hidden ${
           isActive ? 'bg-primary text-white' : 'bg-white text-light-text hover:text-primary'
         }`}
+        data-testid="sidebar-link"
       >
         {children}
       </a>
